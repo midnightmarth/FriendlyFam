@@ -8,6 +8,7 @@ dbConn = sqlite3.connect("FriendlyFamDB.db")
 app = Flask(__name__)
 app.secret_key = "Super Secret"
 csrf = CSRFProtect(app)
+wsgi_app = app.wsgi_app
 
 # my_db = mysql.connector.connect(
 #     host="localhost",
