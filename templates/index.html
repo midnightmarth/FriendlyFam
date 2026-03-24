@@ -16,7 +16,7 @@
         <div class="registration-form">
             <form id="myform" action="/login" method="post" onsubmit="return validation()">
                 <h3 class="text-center">Login</h3>
- 
+                
                 {% if message %}
                 <p class="alert alert-danger">{{ message }}</p>
                 {% endif %}
@@ -30,7 +30,7 @@
                     <input class="form-control item" type="password" name="password" id="password" placeholder="Password" onchange="validation()">
                     <span id="error_password"> </span>
                 </div>
- 
+                
                 <div class="form-group">
                     <button class="btn btn-primary btn-block create-account" type="submit">Login</button>
                 </div>
@@ -38,8 +38,8 @@
                 <hr />
                 <p class="text-center">Need an account? <br /><a href="/signup"> Create Account</a></p>
             </form>
- 
         </div>
    </div>
+   <script src="/static/index.js"></script>
 </body>
 </html>
